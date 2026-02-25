@@ -177,7 +177,7 @@ flowchart LR
 ## 👨‍💻 Author
 
 **Abhishek Kumar**  
-AI Engineer | Distributed Systems | Backend Engineering  
+**Tanya Goyal**
 
 ---
 
