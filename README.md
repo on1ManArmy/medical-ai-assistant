@@ -17,13 +17,6 @@
 
 ---
 
-## ⚠️ Disclaimer
-
-> This project is intended strictly for **research and educational purposes**.  
-> It is **NOT approved for medical diagnosis or clinical use**.
-
----
-
 ## 🎯 Objective
 
 Medical diagnosis often requires combining:
