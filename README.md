@@ -156,22 +156,11 @@ conda activate medical-ai
 ---
 # 🏗 System Architecture
 
-## 🔷 High-Level Pipeline
+## Architecture
+![System Architecture](docs/architecture.png)
 
-flowchart LR
-    A[Chest X-ray] --> B[Vision Encoder<br/>DenseNet121]
-    C[Clinical Notes] --> D[Text Encoder<br/>ClinicalBERT]
-    E[Knowledge Graph<br/>Neo4j] --> F[KG Encoder]
-
-    B --> G[Cross-Modal Attention Fusion]
-    D --> G
-    F --> G
-
-    G --> H[Multi-Label Classifier]
-    H --> I[Predictions]
-    H --> J[Uncertainty (MC Dropout)]
-    B --> K[Grad-CAM Explainability]
-    
+## Deployment
+![Deployment](docs/deployment.png)
 ---
 
 ## 👨‍💻 Author
