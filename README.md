@@ -108,9 +108,7 @@ medical-multimodal-ai/
 ├── environment.yml
 └── README.md
 
-
 ---
-
 
 Includes:
 
@@ -137,4 +135,55 @@ conda env create -f environment.yml
 conda activate medical-ai
 ```
 
+## Tech Stack
 
+- **PyTorch**
+
+- **HuggingFace Transformers**
+
+- **Neo4j**
+
+- **FastAPI**
+
+- **Docker**
+
+- **Monte Carlo Dropout**
+
+- **Grad-CAM**
+
+- **GenAI**
+
+---
+# 🏗 System Architecture
+
+## 🔷 High-Level Pipeline
+
+```mermaid
+flowchart LR
+    A[Chest X-ray] --> B[Vision Encoder<br/>DenseNet121]
+    C[Clinical Notes] --> D[Text Encoder<br/>ClinicalBERT]
+    E[Knowledge Graph<br/>Neo4j] --> F[KG Encoder]
+
+    B --> G[Cross-Modal Attention Fusion]
+    D --> G
+    F --> G
+
+    G --> H[Multi-Label Classifier]
+    H --> I[Predictions]
+    H --> J[Uncertainty (MC Dropout)]
+    B --> K[Grad-CAM Explainability]
+```
+---
+
+## 👨‍💻 Author
+
+**Abhishek Kumar**  
+AI Engineer | Distributed Systems | Backend Engineering  
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for full details.
