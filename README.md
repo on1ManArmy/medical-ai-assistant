@@ -1,6 +1,6 @@
-# 🏥 Multimodal Medical AI System
+# 🏥 AI Powered clinical decision support system
 
-> A production-ready **Multimodal Disease Prediction System** integrating medical imaging, clinical text, and structured knowledge graphs.
+> A production-ready **Multimodal Disease Prediction System** integrating medical imaging, clinical text, structured knowledge graphs and Generative AI.
 
 ---
 
