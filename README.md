@@ -158,7 +158,6 @@ conda activate medical-ai
 
 ## 🔷 High-Level Pipeline
 
-```mermaid
 flowchart LR
     A[Chest X-ray] --> B[Vision Encoder<br/>DenseNet121]
     C[Clinical Notes] --> D[Text Encoder<br/>ClinicalBERT]
@@ -172,7 +171,7 @@ flowchart LR
     H --> I[Predictions]
     H --> J[Uncertainty (MC Dropout)]
     B --> K[Grad-CAM Explainability]
-```
+    
 ---
 
 ## 👨‍💻 Author
